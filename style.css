@@ -164,8 +164,9 @@ section {
     top: 100%; right: -100%;
     height: calc(100vh - 9.5rem);
     width: 35rem;
-    background: #fff;
+    background: var(--black);
     padding: 0 1.5rem;
+    border-top: var(--border);
 }
 
 .header .cart-items-container.active {
@@ -198,7 +199,7 @@ section {
 
 .header  .cart-items-container .cart-item .content h3 {
     font-size: 2rem;
-    color: var(--black);
+    color: #fff;
     padding-bottom: .5rem;
 }
 
@@ -216,7 +217,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(/assets/img/home.jpeg) no-repeat;
+    background: url(assets/img/home.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -552,9 +553,6 @@ h3 {
 
 
 
-
-
-
 /* media queries */
 @media (max-width:991px) {
     html {
@@ -578,9 +576,10 @@ h3 {
     .header .navbar {
         position: absolute;
         top: 100%; right: -100%;
-        background: #fff;
+        background: var(--black);
         width: 30rem;
         height: calc(100vh - 9.5rem);
+        border-top: var(--border);
     }
 
     .header .navbar.active {
@@ -588,11 +587,15 @@ h3 {
     }
 
     .header .navbar a {
-        color: var(--black);
+        color: #fff;
         display: block;
         margin: 1.5rem;
         padding: .5rem;
         font-size: 2rem;
+    }
+
+    .header .navbar a:hover {
+        color: var(--main-color);
     }
 
     .header .search-form {
